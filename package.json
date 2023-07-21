@@ -6,7 +6,7 @@
   "author": "gazzati <gazzaevtimur@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p tsconfig.json && cp .env ./build/.env && clean:modules",
+    "build": "tsc -p tsconfig.json && cp .env ./build/.env && yarn clean:modules",
     "start": "node build/index.js",
     "dev": "nodemon src/index.ts",
     "format": "prettier --write \"src/\"",
