@@ -1,17 +1,18 @@
 {
-  "name": "gamemate_bot",
+  "name": "ya-bolshe-bot",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/gazzati/gamemate_bot.git",
+  "repository": "https://github.com/gazzati/ya-bolshe-bot.git",
   "author": "gazzati <gazzaevtimur@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p tsconfig.json && cp .env ./build/.env",
+    "build": "tsc -p tsconfig.json && cp .env ./build/.env && clean:modules",
     "start": "node build/index.js",
     "dev": "nodemon src/index.ts",
     "format": "prettier --write \"src/\"",
     "lint": "eslint src/**/*.ts --fix",
-    "type": "tsc --project tsconfig.json --noEmit"
+    "type": "tsc --project tsconfig.json --noEmit",
+    "clean:modules": "rm -rf ./node_modules"
   },
   "dependencies": {
     "dotenv": "^16.3.1",

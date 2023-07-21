@@ -21,10 +21,10 @@ jobs:
                 KEY: ${{ secrets.PRIVATE_KEY }}
                 PORT: 22
                 script: |
-                    cd /home/tim/gamemate-bot
+                    cd /home/tim/ya-bolshe-bot
                     git checkout master
                     git pull
                     git status
                     yarn install
                     yarn build
-                    pm2 restart gamemate
+                    pm2 restart yabolshe

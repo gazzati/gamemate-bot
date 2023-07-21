@@ -1,3 +1,3 @@
-# gamemate-bot
+# ya-bolshe-bot
 
-Table games in telegram bot
+Ya Bolshe game in telegram bot
